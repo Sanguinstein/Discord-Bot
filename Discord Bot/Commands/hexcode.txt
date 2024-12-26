@@ -1,0 +1,13 @@
+#990033 maroon
+#3a0166 violet
+#ffaa00 yellow
+#ff0066 pink
+#40ff00 green
+Rose Quartz( #F7CAC9)
+Serenity ( #92A8D1)
+Turquoise(#45B8AC)
+Sand Dollar (#DFCFBE)
+Amethyst Orchid #926AA6
+Marigold #FDAC53
+And (#e6e6fa) , (#fff68f), (#ffdab9)
+.setColor('')

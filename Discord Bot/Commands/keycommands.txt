@@ -1,0 +1,27 @@
+msg.channel.send(`<@&${roleId}> Found one!! ${msga}`);
+for mentioning roles
+
+const channnel = message.guild.channels.cache.find(channel => channel.name === 'reports');
+        channnel.send(warnEmbed);
+
+
+        let channelName = args.slice(0).join(' '); //Arguments to set the channel name
+message.guild.channels.create(channelName, {
+        type: "text", //This create a text channel, you can make a voice one too, by changing "text" to "voice"
+        permissionOverwrites: [
+           {
+             id: message.guild.roles.everyone, //To make it be seen by a certain role, user an ID instead
+             allow: ['VIEW_CHANNEL', 'SEND_MESSAGES', 'READ_MESSAGE_HISTORY'], //Allow permissions
+             deny: ['VIEW_CHANNEL', 'SEND_MESSAGES', 'READ_MESSAGE_HISTORY'] //Deny permissions
+		   }
+        ],
+      })
+
+
+      message.channel.send("Testing message.", { files: ["./images/headpat1.png"] });https://cdn.kapwing.com/final_611924a5c566e3009cff821d_163622.gif
+
+
+
+      https://c.tenor.com/mIRwpAAKFHYAAAAC/pooh-bear-winnie-the-pooh.gif
+      https://c.tenor.com/I9U3UFzzk1EAAAAS/hug-love.gif
+      https://c.tenor.com/9gsqEGVuaI4AAAAC/a-lovely-tuji-hug.gif
