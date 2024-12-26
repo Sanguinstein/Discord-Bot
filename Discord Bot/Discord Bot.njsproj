@@ -29,6 +29,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include=".gitattributes" />
+    <Content Include=".env" />
     <Content Include="Commands\addrole.js" />
     <Content Include="Commands\anonymous.js" />
     <Content Include="Commands\Ban.js" />

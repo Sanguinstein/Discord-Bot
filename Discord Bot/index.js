@@ -1,10 +1,9 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-
 const db = require('quick.db');
-
 const fs = require('fs');
 const { type } = require('os');
+require('dotenv').config();
 
 client.commands = new Discord.Collection();
 client.events = new Discord.Collection();
@@ -19,5 +18,4 @@ for (const file of commandFiles) {
     client.commands.set(command.name, command);
 }
 
-
-client.login('ODcyODI4NjE3NjgyNDY4OTA0.YQvi_g.gV-djsLh8m6NYVMTqrk_nSDdMxM');
+client.login(process.env.BOT_TOKEN);
