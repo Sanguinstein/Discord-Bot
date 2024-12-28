@@ -1,18 +1,18 @@
 const fs = require('fs');
 
 module.exports = (client, Discord) => {
-    const load_dir = (dirs) => {
-        const event_files = fs.readdirSync(`./events/${dirs}`).filter(file => file.endsWith('.js'));
+    const loadDir = (dirs) => {
+        const eventFiles = fs.readdirSync(`./events/${dirs}`).filter(file => file.endsWith('.js'));
 
-        for (const file of event_files) {
+        for (const file of eventFiles) {
             try {
                 const event = require(`../events/${dirs}/${file}`);
-                const event_name = file.split('.')[0];
+                const eventName = file.split('.')[0];
 
                 if (event.once) {
-                    client.once(event_name, (...args) => event.execute(Discord, client, ...args));
+                    client.once(eventName, (...args) => event.execute(Discord, client, ...args));
                 } else {
-                    client.on(event_name, (...args) => event.execute(Discord, client, ...args));
+                    client.on(eventName, (...args) => event.execute(Discord, client, ...args));
                 }
             } catch (error) {
                 console.error(`Error loading event file "${file}" in "${dirs}":`, error);
@@ -20,7 +20,5 @@ module.exports = (client, Discord) => {
         }
     };
 
-    // Dynamically load all subdirectories in the 'events' folder
-    const directories = fs.readdirSync('./events').filter(dir => fs.lstatSync(`./events/${dir}`).isDirectory());
-    directories.forEach(load_dir);
+    ['client', 'guild'].forEach(loadDir);
 };
