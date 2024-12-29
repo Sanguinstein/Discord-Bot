@@ -12,7 +12,7 @@
     <ProjectGuid>b26daa37-28d1-4553-a8e1-84cece7c13de</ProjectGuid>
     <ProjectHome>
     </ProjectHome>
-    <StartupFile>index.js</StartupFile>
+    <StartupFile>Index.js</StartupFile>
     <StartWebBrowser>False</StartWebBrowser>
     <SearchPath>
     </SearchPath>
@@ -63,11 +63,11 @@
     <Content Include="Commands\vc.js" />
     <Content Include="Commands\warn.js" />
     <Content Include="Commands\wyd.js" />
-    <Content Include="Events\client\ready.js" />
-    <Content Include="Events\guild\message.js" />
-    <Content Include="Handlers\command_handler.js" />
-    <Content Include="Handlers\event_handler.js" />
-    <Content Include="index.js" />
+    <Content Include="Events\client\Ready.js" />
+    <Content Include="Events\guild\MessageCreate.js" />
+    <Content Include="Handlers\CommandHandler.js" />
+    <Content Include="Handlers\EventHandler.js" />
+    <Content Include="Index.js" />
     <Content Include="json.sqlite" />
     <Content Include="lg.png" />
     <Content Include="package-lock.json" />

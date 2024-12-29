@@ -1,23 +1,20 @@
-const Discord = require('discord.js');
-const client = new Discord.Client();
-require('dotenv').config();
-const db = require('quick.db');
+// index.js
+const { Client, GatewayIntentBits } = require('discord.js');
+const dotenv = require('dotenv');
+const EventHandler = require('./handlers/EventHandler');
 
-const fs = require('fs');
-const { type } = require('os');
+dotenv.config();
 
-client.commands = new Discord.Collection();
-client.events = new Discord.Collection();
+const client = new Client({
+    intents: [
+        GatewayIntentBits.Guilds,
+        GatewayIntentBits.GuildMessages,
+        GatewayIntentBits.MessageContent,
+        GatewayIntentBits.GuildMembers
+    ]
+});
 
-['command_handler', 'event_handler'].forEach(handler => {
-    require(`./handlers/${handler}`)(client, Discord)
-})
-
-const commandFiles = fs.readdirSync('./commands/').filter(file => file.endsWith('.js'));
-for (const file of commandFiles) {
-    const command = require(`./commands/${file}`);
-    client.commands.set(command.name, command);
-}
-
+const eventHandler = new EventHandler(client);
+eventHandler.initialize();
 
 client.login(process.env.BOT_TOKEN);
