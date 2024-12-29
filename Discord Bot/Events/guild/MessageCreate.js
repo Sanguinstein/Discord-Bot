@@ -11,7 +11,7 @@ class MessageCreate {
         this.client.on(Events.MessageCreate, async message => {
             if (message.author.bot) return;
 
-            const prefixes = ['G ', 'g ', 'G!', 'g!'];
+            const prefixes = ['G', 'g', 'G!', 'g!'];
             const prefix = prefixes.find(p => message.content.startsWith(p));
 
             if (!prefix) return;

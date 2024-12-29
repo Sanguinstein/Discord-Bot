@@ -38,19 +38,21 @@
     <Content Include="Commands\Clear.js" />
     <Content Include="Commands\develop.js" />
     <Content Include="Commands\duck.js" />
-    <Content Include="Commands\Embedd.js" />
+    <Content Include="Commands\Embed.js" />
     <Content Include="Commands\hello.js" />
     <Content Include="Commands\help.js" />
-    <Content Include="Commands\hexcode.txt" />
+    <Content Include="Commands\Resources\hexcode.txt" />
     <Content Include="Commands\hug.js" />
-    <Content Include="Commands\ids.txt" />
-    <Content Include="Commands\keycommands.txt" />
+    <Content Include="Commands\Resources\ids.txt" />
+    <Content Include="Commands\Resources\keycommands.txt" />
     <Content Include="Commands\Kick.js" />
     <Content Include="Commands\member.js" />
     <Content Include="Commands\mute.js" />
     <Content Include="Commands\pfp.js" />
     <Content Include="Commands\ping.js" />
     <Content Include="Commands\quote.js" />
+    <Content Include="Commands\Resources\HugGIF.json" />
+    <Content Include="Commands\Resources\Questions.json" />
     <Content Include="Commands\role.js" />
     <Content Include="Commands\rolecommand.js" />
     <Content Include="Commands\rules.js" />
@@ -78,6 +80,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Commands\" />
+    <Folder Include="Commands\Resources\" />
     <Folder Include="Events\" />
     <Folder Include="Events\client\" />
     <Folder Include="Events\guild\" />
