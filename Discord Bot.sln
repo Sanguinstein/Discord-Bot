@@ -5,7 +5,7 @@ VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "API", "Discord Bot\API.njsproj", "{B26DAA37-28D1-4553-A8E1-84CECE7C13DE}"
 EndProject
-Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "Commands", "Commands\Commands.njsproj", "{72F2A41D-C5C1-4259-A0F8-3AFCA86DE4C8}"
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "Application", "Commands\Application.njsproj", "{72F2A41D-C5C1-4259-A0F8-3AFCA86DE4C8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
