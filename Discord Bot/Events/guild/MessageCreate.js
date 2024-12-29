@@ -20,7 +20,7 @@ class MessageCreate {
             const commandName = args.shift().toLowerCase();
 
             // Load command dynamically
-            const commandPath = path.resolve(`../Discord Bot/Commands/${commandName}.js`);
+            const commandPath = path.resolve(`../Commands/${commandName}.js`);
 
             if (fs.existsSync(commandPath)) {
                 const command = require(commandPath);

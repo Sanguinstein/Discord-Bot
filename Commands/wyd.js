@@ -6,7 +6,7 @@ module.exports = {
     description: "Would You Rather game with random questions",
     execute(message) {
         // Load questions from the JSON file
-        const questions = JSON.parse(fs.readFileSync('../Discord Bot/Commands/Resources/Questions.json', 'utf8'));
+        const questions = JSON.parse(fs.readFileSync('../Commands/Resources/Questions.json', 'utf8'));
 
         // Select a random question
         const randomIndex = Math.floor(Math.random() * questions.length);

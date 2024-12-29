@@ -1,7 +1,7 @@
 const { readFileSync } = require('fs');
 const { EmbedBuilder } = require('discord.js');
 
-const hugGifs = JSON.parse(readFileSync('../Discord Bot/Commands/Resources/HugGIF.json')); // Load GIF data from JSON
+const hugGifs = JSON.parse(readFileSync('../Commands/Resources/HugGIF.json')); // Load GIF data from JSON
 
 module.exports = {
     name: 'hug',
