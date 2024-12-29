@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-
+require('dotenv').config();
 const db = require('quick.db');
 
 const fs = require('fs');
@@ -20,4 +20,4 @@ for (const file of commandFiles) {
 }
 
 
-client.login('ODcyODI4NjE3NjgyNDY4OTA0.YQvi_g.gV-djsLh8m6NYVMTqrk_nSDdMxM');
+client.login(process.env.BOT_TOKEN);
