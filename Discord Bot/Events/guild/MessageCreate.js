@@ -25,8 +25,6 @@ class MessageCreate {
             if (fs.existsSync(commandPath)) {
                 const command = require(commandPath);
                 command.execute(message, args);
-            } else {
-                message.channel.send(`Unknown command: ${commandName}`);
             }
         });
     }
