@@ -31,6 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="BotCommands\addrole.js" />
+    <Content Include="BotCommands\afk.js" />
     <Content Include="BotCommands\anonymous.js" />
     <Content Include="BotCommands\app.js" />
     <Content Include="BotCommands\Ban.js" />
@@ -62,6 +63,7 @@
     <Content Include="BotCommands\wyd.js" />
     <Content Include="package-lock.json" />
     <Content Include="package.json" />
+    <Content Include="Resources\AFKDetails.json" />
     <Content Include="Resources\hexcode.txt" />
     <Content Include="Resources\HugGIF.json" />
     <Content Include="Resources\ids.txt" />
