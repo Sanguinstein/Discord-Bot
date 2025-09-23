@@ -27,7 +27,7 @@ module.exports = {
                 message.reply(`The channel **${channel.name}** has been created.`);
             }).catch(err => {
                 console.error(err);
-                message.reply("I couldn’t create the channel. Check my permissions.");
+                message.reply("I couldnï¿½t create the channel. Check my permissions.");
             });
         } else {
             message.reply("You do not have the `Manage Channels` permission to use this command.");

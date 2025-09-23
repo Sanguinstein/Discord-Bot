@@ -12,6 +12,7 @@ module.exports = {
             .addFields(
                 { name: 'a.) **MODERATION** (Type `help mod` for more details)', value: '`mute`, `kick`, `ban`, `clear`, `warn`, `channel`, `vc`, `embed`, `temp`' },
                 { name: 'b.) **FUN**', value: '`truth`, `dice`, `hug`, `ano`, `wyd`, `sus`, `suggest`, `pfp`, `quote`, `nav`' },
+
                 //{ name: 'c.) **MUSIC** *(not yet ready)*', value: '`play`, `stop`' },
                 //{ name: 'd.) **MISCELLANEOUS**', value: '`iloveyou`, `your <version/creator/face>`' },
                 //{ name: 'e.) **BOOSTER** (Type `help booster` for more details)', value: '`role <create/add/delete>`' }

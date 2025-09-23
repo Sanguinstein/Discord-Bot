@@ -16,5 +16,4 @@ const client = new Client({
 
 const eventHandler = new EventHandler(client);
 eventHandler.initialize();
-
 client.login(process.env.BOT_TOKEN);
