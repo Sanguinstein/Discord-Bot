@@ -12,7 +12,8 @@
     <ProjectGuid>72f2a41d-c5c1-4259-a0f8-3afca86de4c8</ProjectGuid>
     <ProjectHome>
     </ProjectHome>
-    <StartupFile>app.js</StartupFile>
+    <StartupFile>
+    </StartupFile>
     <StartWebBrowser>False</StartWebBrowser>
     <SearchPath>
     </SearchPath>
@@ -29,43 +30,43 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="addrole.js" />
-    <Content Include="anonymous.js" />
-    <Content Include="app.js" />
-    <Content Include="Ban.js" />
-    <Content Include="channel.js" />
-    <Content Include="Clear.js" />
-    <Content Include="develop.js" />
-    <Content Include="duck.js" />
-    <Content Include="Embed.js" />
-    <Content Include="hello.js" />
-    <Content Include="help.js" />
-    <Content Include="hug.js" />
-    <Content Include="Kick.js" />
-    <Content Include="member.js" />
-    <Content Include="mute.js" />
+    <Content Include="BotCommands\addrole.js" />
+    <Content Include="BotCommands\anonymous.js" />
+    <Content Include="BotCommands\app.js" />
+    <Content Include="BotCommands\Ban.js" />
+    <Content Include="BotCommands\channel.js" />
+    <Content Include="BotCommands\Clear.js" />
+    <Content Include="BotCommands\develop.js" />
+    <Content Include="BotCommands\duck.js" />
+    <Content Include="BotCommands\Embed.js" />
+    <Content Include="BotCommands\hello.js" />
+    <Content Include="BotCommands\help.js" />
+    <Content Include="BotCommands\hug.js" />
+    <Content Include="BotCommands\Kick.js" />
+    <Content Include="BotCommands\member.js" />
+    <Content Include="BotCommands\mute.js" />
+    <Content Include="BotCommands\pfp.js" />
+    <Content Include="BotCommands\ping.js" />
+    <Content Include="BotCommands\quote.js" />
+    <Content Include="BotCommands\role.js" />
+    <Content Include="BotCommands\rolecommand.js" />
+    <Content Include="BotCommands\rules.js" />
+    <Content Include="BotCommands\suggest.js" />
+    <Content Include="BotCommands\sus.js" />
+    <Content Include="BotCommands\talk.js" />
+    <Content Include="BotCommands\temprole.js" />
+    <Content Include="BotCommands\truth.js" />
+    <Content Include="BotCommands\unmute.js" />
+    <Content Include="BotCommands\vc.js" />
+    <Content Include="BotCommands\warn.js" />
+    <Content Include="BotCommands\wyd.js" />
+    <Content Include="package-lock.json" />
     <Content Include="package.json" />
-    <Content Include="pfp.js" />
-    <Content Include="ping.js" />
-    <Content Include="quote.js" />
-    <Content Include="README.md" />
     <Content Include="Resources\hexcode.txt" />
     <Content Include="Resources\HugGIF.json" />
     <Content Include="Resources\ids.txt" />
     <Content Include="Resources\keycommands.txt" />
     <Content Include="Resources\Questions.json" />
-    <Content Include="role.js" />
-    <Content Include="rolecommand.js" />
-    <Content Include="rules.js" />
-    <Content Include="suggest.js" />
-    <Content Include="sus.js" />
-    <Content Include="talk.js" />
-    <Content Include="temprole.js" />
-    <Content Include="truth.js" />
-    <Content Include="unmute.js" />
-    <Content Include="vc.js" />
-    <Content Include="warn.js" />
-    <Content Include="wyd.js" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="BotCommands\" />
